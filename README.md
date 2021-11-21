@@ -26,3 +26,6 @@ They provide 2 ways to authenticate to their API, you can chose one
 
 # SYNTAX ENFORCER
 `rubocop`
+
+# COMMANDS
+- Fetch all available languages: `ruby bin/languages.rb`

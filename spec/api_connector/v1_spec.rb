@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../lib/api_connector/v1'
 
 RSpec.describe ApiConnector::V1 do
