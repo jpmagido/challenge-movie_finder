@@ -1,26 +1,11 @@
 require 'dotenv/load'
-require 'json'
 require 'net/http'
+
+require_relative 'base'
 
 module ApiConnector
   # Connector to TMDB API V4
-  class V1
-    def initialize(url)
-      @url = url
-    end
-
-    def body
-      response.body
-    end
-
-    def header
-      response.header
-    end
-
-    def parsed_body
-      JSON.parse(response.body)
-    end
-
+  class V1 < Base
     private
 
     def response
